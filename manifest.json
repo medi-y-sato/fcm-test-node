@@ -1,0 +1,16 @@
+{
+  "name": "Push Notifications codelab",
+  "gcm_sender_id": "<<CHANGE HERE>>",
+
+  "short_name": "PushTest",
+  "icons": [
+    {
+      "src": "./corp_logo.png",
+      "sizes": "500x119",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#e91e63"
+}

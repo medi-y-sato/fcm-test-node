@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firebase Push Test</title>
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<p>Firebase Push Test</p>
+
+<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+<script>
+  var config = {
+    apiKey: "<<CHANGE HERE>>",
+    authDomain: "<<CHANGE HERE>>",
+    databaseURL: "<<CHANGE HERE>>",
+    storageBucket: "<<CHANGE HERE>>",
+    messagingSenderId: "<<CHANGE HERE>>"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="index.js"></script>
+
+</body>
+</html>
