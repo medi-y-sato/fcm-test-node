@@ -45,8 +45,8 @@ http.createServer(function(req, res) {
       var match = /https:\/\/android.googleapis.com\/gcm\/send\/(.*)/
       endpoint = match.exec(url_parts.query.endpoint)[1]
       console.log('receive endpoint : ' + endpoint)
-      console.log('use this command line to send pus message')
-      console.log('$ node pushMessage.js -e ' + endpoint + ' -m <message>')
+      console.log('use this command line to send push message')
+      console.log('$ node pushMessage.js -e ' + endpoint)
 
       res.writeHead(200, {"Content-Type": "text/plain"});
       res.write("accepted\n");
@@ -67,7 +67,7 @@ http.createServer(function(req, res) {
       fs.readFile(filename, "binary", function(err, file){
         if (err) {
           Response["500"](err);
-          return ; 
+          return ;
         }
         Response["200"](file, filename);
       });
